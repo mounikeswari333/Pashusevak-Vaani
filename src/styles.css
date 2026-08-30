@@ -1,0 +1,92 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+
+    /* Brand palette - HSL format */
+    --saffron: 41 97% 56%;
+    --saffron-soft: 41 100% 78%;
+    --brown: 31 76% 28%;
+    --brown-soft: 41 68% 91%;
+    --leaf: 76 92% 40%;
+    --leaf-soft: 76 89% 83%;
+    --leaf-dark: 76 47% 28%;
+    --leaf-deep: 76 43% 18%;
+    --paper: 41 100% 99%;
+    --ink: 31 54% 12%;
+
+    --background: 41 100% 99%;
+    --foreground: 31 54% 12%;
+    --card: 0 0% 100%;
+    --card-foreground: 31 54% 12%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 31 54% 12%;
+    --primary: 31 76% 28%;
+    --primary-foreground: 41 100% 97%;
+    --secondary: 41 68% 91%;
+    --secondary-foreground: 31 76% 28%;
+    --muted: 41 70% 88%;
+    --muted-foreground: 31 21% 43%;
+    --accent: 41 97% 56%;
+    --accent-foreground: 31 76% 28%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 41 72% 83%;
+    --input: 41 72% 83%;
+    --ring: 41 97% 56%;
+  }
+
+  .dark {
+    --background: 31 54% 8%;
+    --foreground: 41 100% 99%;
+    --card: 31 52% 18%;
+    --card-foreground: 41 100% 99%;
+    --popover: 31 52% 18%;
+    --popover-foreground: 41 100% 99%;
+    --primary: 41 97% 58%;
+    --primary-foreground: 31 76% 28%;
+    --secondary: 31 52% 28%;
+    --secondary-foreground: 41 100% 99%;
+    --muted: 31 52% 28%;
+    --muted-foreground: 31 20% 70%;
+    --accent: 76 92% 50%;
+    --accent-foreground: 31 54% 12%;
+    --border: 0 0 0 / 12%;
+    --input: 0 0 0 / 15%;
+    --ring: 41 97% 58%;
+  }
+
+  * {
+    border-color: hsl(var(--border));
+  }
+
+  body {
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+    font-family: 'Lora', Georgia, serif;
+  }
+}
+
+@layer components {
+  .font-serif {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+
+  .font-body {
+    font-family: 'Lora', Georgia, serif;
+  }
+
+  .font-sans {
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+
+  .font-mono {
+    font-family: 'JetBrains Mono', ui-monospace, monospace;
+  }
+
+  .font-hi {
+    font-family: 'Noto Sans Devanagari', 'Inter', sans-serif;
+  }
+}
